@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-content">Registro de nuevos aspirantes</h1>
+            <p id="description" class="description text-content">La Universidad para la 
+                que postulaste necesita algunos de tus datos</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input  type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Escribe tu nombre"
+                required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="emial" id="email" name="email"
+                class="form-control"
+                placeholder="Escribe tu correo"
+                required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Año<span>(Opcional)</span></label>
+                <input type="number" name="Age" id="number"
+                min="17"
+                max="99"
+                class="form-control"
+                placeholder="Año"
+                >
+            </div>
+            <div class="from-group">
+                <label>Sexo</label>
+                <label>
+                <input
+              name="sexo"
+              value="masculino"
+              type="radio"
+              class="input-radio"
+              checked
+            />Masculino</label
+          >
+          <label>
+            <input
+              name="sexo"
+              value="Femenino"
+              type="radio"
+              class="input-radio"
+            />Femenino</label
+          >
+            </div>
+            <div class="form-group">
+                <p class="carreras">Que carrera te gustaria cursar en la universidad?</p>
+                <select id="dropdown" name="carreras" class="form-control" required>
+                    <option disabled selected value>Selecciona una carrera</option>
+                    <option value="Ingenieria en Sistemas"> Ingenieria en Sistemas</option>
+                    <option value="Ingenieria en Ciberseguridad">Ingenieria en Ciberseguridad</option>
+                    <option value="Ingenieria en Mecatronica">Ingenieria en Mecatronica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="carreras">Que asignaturas extras te gustaria cursar?</p>
+                <label>
+                <input
+                name="prefer"
+                value="Musica-y-arte"
+                type="checkbox"
+                />Musica y Arte</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="Marketing"
+                    type="checkbox"/>
+                    Marketing
+                </label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="Evaluacion-de-proyectos"
+                    type="checkbox"/>
+                    Evaluacion de proyectos
+                </label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="Actuacion"
+                    type="checkbox"/>
+                    Actuacion
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="carreras">Escribe algunos comentarios...</p>
+                <textarea id="comentario" class="text-area-comment" 
+                name="comentarios"
+                placeholder="Escribe aqui tus comentarios...">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

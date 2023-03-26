@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(75deg, rgba(17,122,152,1) 0%, rgba(25,124,75,1) 35%, rgba(35,175,175,1) 83%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    width: 100%;
+    margin:3.125rem auto 0 auto;
+    /*background-color: rgb(6, 70, 63);*/
+    border-radius: 5px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+    opacity: 0.8;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+    
+}
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: aliceblue;
+}
+.text-content{
+    color:aliceblue;
+    text-align: center;
+}
+p{
+    font-size: 1.125em;
+}
+form{
+    background-color:rgb(6, 70, 63);
+    padding: 2.5rem 0.625rem;
+    border-radius: 1.25rem 0rem 1.25rem 0rem;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(100deg,rgba(6, 70, 63,0.2),rgba(6, 70, 63,0.2));
+    box-shadow: 0 10px 26px 0 rgba(6,70,63,0.50);
+}
+.form-group{
+    padding: 0.25rem;
+    margin: 0 auto 1.25rem auto;
+}
+.form-control{
+    
+    display: block;
+    width: 100%;
+    height: 2.0rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+}
+.carreras{
+    color: aliceblue;
+}
+.text-area-comment{
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border-radius: 0.25rem;
+    color: black;
+   
+}
+.submit-button{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0 15px 0 15px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(100deg,rgba(0, 0, 0,0.2),rgba(0, 0, 0,0.2));
+    box-shadow: 0 10px 26px 0 rgba(0,0,0,0.50);
+    font-size: 1.25rem;
+    color: aliceblue;
+    font-weight: 250;
+}
